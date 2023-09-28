@@ -1,11 +1,11 @@
 <template>
     <div>
-        <div class="card py-10">
-            <img :src="product.image" alt="product thumb" class="mx-auto max-w-auto max-h-96">
+        <div class="card flex justify-items-center">
+            <img :src="product.image" alt="product thumb" class="h-full w-auto">
         </div>
-        <div class="">
-            <p class="font-bold text-gray-500 m-4 truncate text-center">{{ product.category }}</p>
-            <p class="font-bold text-gray-500 m-4 ">{{ product.description }}</p>
+        <div class="mt-5">
+            <p class="font-poppins font-semibold text-2xl text-gray-500 text-center mb-2">{{ product.category }}</p>
+            <p class="font-poppins text-xl text-gray-500">{{ product.description }}</p>
         </div>
     </div>
 </template>
@@ -14,4 +14,8 @@
 const { product } = defineProps(['product'])
 </script>
 
-<style scoped></style>
+<style scoped>
+    img {
+        height: 490px;
+    }
+</style>

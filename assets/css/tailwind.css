@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,6 +17,6 @@ body{
         @apply bg-[#12b488] text-white px-3 py-2 rounded-md text-sm text-white;
     }
     .card {
-        @apply p-3 rounded-md bg-white shadow-md h-full;
+        @apply rounded-md bg-white shadow-md h-full;
     }
 }

@@ -8,7 +8,13 @@ export default {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ['Poppin'],
+        rufina: ['Rufina'],
+        robotoslab: ['Roboto Slab']
+      }
+    },
   },
   plugins: [],
 }

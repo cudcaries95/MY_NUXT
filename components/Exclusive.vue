@@ -1,14 +1,28 @@
 <template>
-    <div class="grid grid-cols-2 gap-10">
-        <div class="p-7">
-            <img :src="product.image" alt="product img" class="mx-auto my-7 max-h-full max-w-auto rounded-3xl">
+    <div class="grid grid-cols-2 gap-20">
+        <div>
+            <img :src="product.image" alt="product img" class="h-full w-auto pl-16">
         </div>
-        <div class="p-7 flex flex-col justify-center">
-            <h1 class="text-4xl my-7 font-bold">Exclusive Offer</h1>
-            <p class="text-2xl my-7">Open for sale at extremely preferential prices until October 5, 2023</p>
-            <p class="mt-5 mb-5">                
+        <div class="flex flex-col justify-center">
+            <h1 class="font-robotoslab text-4xl font-bold mb-5">Exclusive Offer</h1>
+            <p class="font-poppins text-xl mb-9">Open for sale at extremely preferential prices until October 5, 2023</p>
+            <div class="flex gap-7 mb-9">
+                <button class="h-20 w-20 border bg-white">
+                    <p class="text-2xl font-poppins font-semibold">06</p>
+                    <p class="text-sm font-poppins">Days</p>
+                </button>
+                <button class="h-20 w-20 border bg-white">
+                    <p class="text-2xl font-poppins font-semibold">18</p>
+                    <p class="text-sm font-poppins">Hours</p>
+                </button>
+                <button class="h-20 w-20 border bg-white">
+                    <p class="text-2xl font-poppins font-semibold">48</p>
+                    <p class="text-sm font-poppins">Mins</p>
+                </button>
+            </div>
+            <p class="">                
                 <NuxtLink to="/products/14">
-                    <button class="bg-green-800 text-white border-2 px-4 py-4 text-2xl">BUY NOW</button>
+                    <button class="bg-green-800 text-white border-2 w-60 h-16 text-xl font-poppins">BUY NOW</button>
                 </NuxtLink>
             </p>
         </div>
@@ -20,5 +34,7 @@
 </script>
 
 <style scoped>
-
+    img {
+        height: 516px;
+    }
 </style>

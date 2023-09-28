@@ -1,19 +1,17 @@
 <template>
     <div class="grid grid-cols-2 gap-10">        
-        <div class="p-10 flex flex-col justify-center">
-            <h2 class="text-4xl my-7">{{ product.title }}</h2>
-            <p class="text-4xl my-7">Price - ${{ product.price }}</p>
-            <h3 class="font-bold border-b-2 mb-4 pb-2 text-2xl">Product description:</h3>
-            <p class="mb-7 text-2xl">{{ product.description }}</p>
-            <p class="mt-5 mb-5">                
+        <div class="flex flex-col justify-center">
+            <h2 class="font-rufina font-bold text-7xl my-6">{{ product.title }}</h2>
+            <p class="font-poppins font-medium text-2xl my-6">{{ product.description }}</p>
+            <p >                
                 <NuxtLink to="/products/7">
-                    <button class="bg-green-800 text-white border-2 px-4 py-4 text-2xl">EXPLORE NOW</button>
+                    <button class="font-poppins bg-green-800 text-white border text-xl w-56 h-16">EXPLORE NOW</button>
                 </NuxtLink>
             </p>
         </div>
-        <div class="p-10">
+        <div class="pb-20">
             <p></p>
-            <img :src="product.image" alt="product img" class="my-7 max-w-lg rounded-bl-3xl rounded-tr-3xl">
+            <img :src="product.image" alt="product img" class="">
         </div>
     </div>
 </template>
@@ -23,5 +21,9 @@
 </script>
 
 <style scoped>
-
+    img {
+        width: 449x;
+        height: 621px;
+        border-radius: 20% 5% 20% 10%;
+    }
 </style>
